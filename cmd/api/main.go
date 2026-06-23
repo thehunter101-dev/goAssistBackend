@@ -16,6 +16,6 @@ func main(){
 	//Aqui se generan el enrutamiento
 	router := gin.Default()
 	router.GET("/hola/:name",handlers.Hello)
-
+	router.POST("/alumnos", handlers.CrearAlumno)
 	router.Run()
 }
